@@ -1,5 +1,3 @@
-/* eslint-disable */ 
-
 <template>
   <div class="gallery">
     <h1>This is a gallery</h1>
@@ -11,10 +9,7 @@
 
 <script>
 export default {
-  name: "Header",
-  props: {
-      msg: String
-  },
+  name: "Gallery",
   data() {
     return {
       images: [

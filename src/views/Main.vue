@@ -9,13 +9,13 @@
           <option>Два</option>
           <option>Три</option>
         </select>
-        <div class="radios input">
+        <div class="checkbox input">
           <label>A</label>
-          <input type="radio" v-bind:value="a">
+          <input type="checkbox">
           <label>B</label>
-          <input type="radio" v-bind:value="b">
+          <input type="checkbox">
           <label>C</label>
-          <input type="radio" v-bind:value="c">
+          <input type="checkbox">
         </div>
       </div>
       <div class="table_menu">

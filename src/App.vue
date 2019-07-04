@@ -25,7 +25,7 @@ export default {
 }
 
 p {
-  padding: 0 50px;
+  padding: 0 100px;
 }
 
 .main_table {
@@ -58,7 +58,7 @@ p {
   height: 30px;
 }
 
-.radios {
+.checkbox {
   height: 30px;
   display: inline-block;
   margin: 0 10px;
