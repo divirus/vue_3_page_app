@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './layout/Header';
 export default {
-  name: 'app',
+  name:"app",
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
@@ -23,6 +22,58 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+p {
+  padding: 0 50px;
+}
+
+.main_table {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 320px 1fr;
+	grid-template-rows: 60px 100%;
+	grid-template-areas: "header header"  "menu content";
+}
+
+.table_header {
+	width: 100%;
+  grid-area: header;
+}
+
+.table_content {
+	grid-area: content;
+}
+
+.table_menu {
+	grid-area: menu;
+	padding: 0 15px;
+}
+
+.text {
+  height: 24px;
+}
+
+.select {
+  height: 30px;
+}
+
+.radios {
+  height: 30px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.gallery_container {
+  margin: auto auto;
+  height: 50%;
+  width: 50%;
+}
+
+.gallery_pic {
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+}
+
 </style>
